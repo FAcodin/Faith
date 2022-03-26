@@ -1,0 +1,1 @@
+var answer = window.confirm
