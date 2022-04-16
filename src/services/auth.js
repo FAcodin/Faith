@@ -38,7 +38,10 @@ export const signIn = ({ email, password }, onSuccess, onFailure) => {
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      // ..
+      console.log(error)
+      if (onFailure) {
+        onFailure(error.message);
+      }
     });
 }
 
