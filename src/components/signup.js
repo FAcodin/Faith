@@ -40,11 +40,11 @@ function SignUp() {
             </ul>
             <header>
                 <form>
-                    <h2 className="text-black text-black font-bold text-4xl">SignUp</h2>
+                    <h2 className="text-white text-white font-bold text-4xl">SignUp</h2>
                     <form onSubmit={formik.handleSubmit}>
                         <div>
                             <label> First Name </label>
-                            <input className=" border border-4 border-black-400 m-2 mb-6 md:w-35 h-10  shadow-inner rounded py-2 w-1/4 placeholder:text-gray-350 font-light font-md text-left md:text-3xl sm:text-2xl text-center " id="firstName" value={formik.values.firstName} onChange={formik.handleChange} type="text" name="firstName" placeholder="First Name" />
+                            <input className="border border-4 border-black-400 m-2 mb-6 md:w-35 h-10  shadow-inner rounded py-2 w-1/4 placeholder:text-white-350 font-light font-md text-left md:text-3xl sm:text-2xl text-center " id="firstName" value={formik.values.firstName} onChange={formik.handleChange} type="text" name="firstName" placeholder="First Name" />
                         </div>
                         <div>
                             <label> Last Name </label>

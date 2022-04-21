@@ -10,6 +10,7 @@ import App from '../App';
 import NotFound from "../components/notfound";
 import Home from "../components/secure/home";
 import RequireAuth from "../services/requireAuth";
+import Completed from "../components/completed";
 
 const MyRoutes = () => {
     return (
@@ -26,7 +27,24 @@ const MyRoutes = () => {
                 // <RequireAuth>
                     <Home />
                 // </RequireAuth>
-            } />
+            } 
+            />
+            {/* <Route
+            path="/quiz/start"
+            element={
+                <RequireAuth>
+                    < />
+                </RequireAuth>
+            }
+            /> */}
+            <Route
+            path="/quiz/results"
+            element={
+                <RequireAuth>
+                    <Completed />
+                </RequireAuth>
+            }
+            />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )
